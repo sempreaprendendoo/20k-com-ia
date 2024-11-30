@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upsell - A Lista Negra dos Investimentos</title>
+  <link href="img/logo-invest.png" rel="icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #2a2a2a;
+      color: #fff;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .vsl {
+      margin: 20px 0;
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    .bonus {
+      margin: 30px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      animation: slideIn 2s ease-in-out;
+    }
+    .bonus h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .bonus ul {
+      list-style: none;
+      padding: 0;
+    }
+    .bonus ul li {
+      margin: 10px 0;
+      text-align: left;
+      padding-left: 25px;
+      position: relative;
+    }
+    .bonus ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #4caf50;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #ff5722;
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+      animation: pulse 1.5s infinite;
+    }
+    .btn:hover {
+      background: #e64a19;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    .countdown {
+      font-size: 1.5rem;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #ff9800;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="font-size: 35px; color: red;">Essa é sua <b>ÚLTIMA CHANCE!</b></h1>
+    <p style="color: gray; text-align: center; font-size: 17px;">Como sabemos que este guia vai transformar a maneira como você investe, decidimos fazer algo especial para você!</p>
+    <hr>
+    <br>
+    <p><strong>De <b style="color: red;">R$159</b>, agora por <b style="color: greenyellow;">R$60</b> — um desconto incrível para garantir que você tenha acesso a esse conhecimento essencial.</p>
+    <div class="bonus">
+      <h3>O que você receberá:</h3>
+      <ul>
+        <li>A Lista Negra dos Investimentos</li>
+        <li>Evitar Prejuízos Desnecessários</li>
+        <li>Acesso a Atualizações Exclusivas</li>
+        <li>E muito mais...</li>
+      </ul>
+      <p style="color: greenyellow;">Apôs a compra você ainda terá <b>7 dias</b> de garantia.</p>
+    </div>
+    <button class="btn" style="background-color: green;" onclick="redirectToCheckout()">Compre Agora de <b style="text-decoration: line-through;">R$159,00</b> á <b style="color: #fff; font-size: 20px;">R$ 60,00</b></button>
+    <p class="countdown" id="countdown">Oferta expira em: 00:15:00</p>
+  </div>
+
+  <script>
+    // Função para redirecionar para checkout
+    function redirectToCheckout() {
+      window.location.href = "https://www.seusite.com/checkout";
+    }
+
+    // Contagem regressiva
+    const countdownElement = document.getElementById("countdown");
+    let time = 15 * 60; // 15 minutos em segundos
+
+    function updateCountdown() {
+      const minutes = Math.floor(time / 60);
+      const seconds = time % 60;
+      countdownElement.textContent = `Oferta expira em: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      time--;
+      if (time < 0) {
+        countdownElement.textContent = "Oferta expirada!";
+      }
+    }
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
