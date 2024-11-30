@@ -33,7 +33,7 @@ const questions = [
     },
 
     {
-        question: "O que mais te estressa ao investir?",
+        question: "O que mais te estressaria se começasse a investir agora?",
         options: ["Não saber com quanto devo começar a investir.", "Não saber qual a melhor área para investir e ter bons resultados.", "A dificuldade de ter lucro rápido e ver meu dinheiro crescer.", "Ficar inseguro sobre quais decisões tomar para não perder dinheiro."]
 
     },
@@ -43,11 +43,6 @@ const questions = [
         question: "Você quer aprender a investir R$ 100 ou menos e ter um retorno rápido?",
         options: ["Sim, quero aprender a investir com pouco e ver resultados rápidos!", "Prefiro começar com mais, mas quero aprender a investir rápido.", "Sim, acho que é possível ter lucro rápido com pouco investimento." , "Não, prefiro investir mais, mas estou aberto a aprender."]
     },
-    {
-        question: "Quer aprender a deixar seus investimentos no automático, evitando trabalho?",
-        options: ["Sim, quero aprender a investir sem precisar me preocupar constantemente." , "Sim, adoro a ideia de automatizar meus investimentos!" , "Prefiro gerenciar, mas estou interessado em formas de facilitar.", "Não, gosto de ter controle total sobre os meus investimentos."]
-    },
-
     {
         question: "Por que você quer começar a investir?",
         options: ["Quero mudar minha vida financeira e ter mais liberdade.", "Quero melhorar a vida da minha família e garantir um futuro melhor.", "Meu objetivo é comprar um carro novo e conquistar mais conforto.", "Quero comprar uma casa nova e realizar o sonho da minha família."]
