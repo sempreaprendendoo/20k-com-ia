@@ -120,6 +120,7 @@
 </head>
 <body>
   <div class="container">
+
     <h1>Parabéns pela sua compra!👏🎉</h1>
     <p style="color: gray; text-align: center; font-size: 17px;"> Você está 🤏 da sua liberdade financeira. Com a Estratégia Russa, você vai se beneficiar de coisas que muitos nem imaginam!</p>
     <hr><br>
@@ -130,7 +131,24 @@
     </div>
     <br>
     <p><strong>Oferta Exclusiva!! <br> Não perca a chance de proteger seu dinheiro e aumentar seus ganhos.</p>
-    <div class="bonus">
+      <p class="countdown" id="countdown">Oferta expira em: 00:15:00</p>
+
+
+
+      <!-- HOTMART - Sales Funnel Widget -->
+<!--- sales funnel container --->
+<div id="hotmart-sales-funnel"></div>
+
+<!--- script load and setup --->
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+<script>
+checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+</script>
+<!-- HOTMART - Sales Funnel Widget -->
+
+
+
+      <div class="bonus">
       <h3>O que você receberá:</h3>
       <ul>
         <li>A Lista Negra dos Investimentos</li>
@@ -140,9 +158,10 @@
       </ul>
       <p style="color: greenyellow;">Apôs a compra você ainda terá <b>7 dias</b> de garantia.</p>
     </div>
-    <button class="btn" style="background-color: green;" onclick="redirectToCheckout()">Compre Agora! de: <b style="text-decoration: line-through;">R$499,00</b> á <b style="color: #fff; font-size: 20px;">R$ 159,00</b></button>
-    <p class="countdown" id="countdown">Oferta expira em: 00:15:00</p>
+
   </div>
+
+  
 
   <script>
     // Função para redirecionar para checkout

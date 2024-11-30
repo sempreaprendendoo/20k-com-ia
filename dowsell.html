@@ -120,12 +120,31 @@
 </head>
 <body>
   <div class="container">
+    <p class="countdown" id="countdown">Oferta expira em: 00:15:00</p>
+
     <h1 style="font-size: 35px; color: red;">Essa é sua <b>ÚLTIMA CHANCE!</b></h1>
     <p style="color: gray; text-align: center; font-size: 17px;">Como sabemos que este guia vai transformar a maneira como você investe, decidimos fazer algo especial para você!</p>
     <hr>
     <br>
-    <p><strong>De <b style="color: red;">R$159</b>, agora por <b style="color: greenyellow;">R$60</b> — um desconto incrível para garantir que você tenha acesso a esse conhecimento essencial.</p>
-    <div class="bonus">
+    <p><strong>Vamos dar um desconto incrível para garantir que você tenha acesso a esse conhecimento essencial.</p>
+      
+
+
+       <!-- HOTMART - Sales Funnel Widget -->
+<!--- sales funnel container --->
+<div id="hotmart-sales-funnel"></div>
+
+<!--- script load and setup --->
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+<script>
+checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+</script>
+<!-- HOTMART - Sales Funnel Widget -->
+
+
+
+
+      <div class="bonus">
       <h3>O que você receberá:</h3>
       <ul>
         <li>A Lista Negra dos Investimentos</li>
@@ -135,9 +154,10 @@
       </ul>
       <p style="color: greenyellow;">Apôs a compra você ainda terá <b>7 dias</b> de garantia.</p>
     </div>
-    <button class="btn" style="background-color: green;" onclick="redirectToCheckout()">Compre Agora de <b style="text-decoration: line-through;">R$159,00</b> á <b style="color: #fff; font-size: 20px;">R$ 60,00</b></button>
-    <p class="countdown" id="countdown">Oferta expira em: 00:15:00</p>
   </div>
+
+
+ 
 
   <script>
     // Função para redirecionar para checkout
