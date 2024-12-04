@@ -5,6 +5,10 @@
     --dark: #103741;
 }
 
+body{
+    background-color: #2a2a2a;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -33,6 +37,21 @@
 .btn {
     font-weight: 500;
     transition: .5s;
+}
+
+.nav-img-te{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-img-te img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .btn.btn-primary {
@@ -567,3 +586,17 @@ h6,
 .answer.show {
     display: block;
 }
+
+
+
+.vsl {
+    margin: 20px 0;
+  }
+  video {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
