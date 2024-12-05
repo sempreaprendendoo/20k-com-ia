@@ -32,6 +32,26 @@ body{
     opacity: 1;
 }
 
+.container-img-index-top{
+    background: linear-gradient(48deg, red, orange);
+    width: 90%;
+    height: 20%;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    object-fit: cover;
+    margin: auto;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.container-img-index-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 /*** Button ***/
 .btn {
